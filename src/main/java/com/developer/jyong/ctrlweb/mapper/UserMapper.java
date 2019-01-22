@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper {
     User findUserById(int id) throws Exception;
+
+    User findUserByMail(String mail) throws Exception;
 }

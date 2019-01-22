@@ -16,4 +16,9 @@ public class UserServiceImpl implements UserService {
     public User findUserById(int id) throws Exception {
         return userMapper.findUserById(id);
     }
+
+    @Override
+    public User findUserByMail(String mail) throws Exception {
+        return userMapper.findUserByMail(mail);
+    }
 }
